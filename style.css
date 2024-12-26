@@ -199,20 +199,19 @@ nav li:first-child{
     animation: slideInTop 1s ease-in 1s 1 normal none;
 }
 .project-container {
-    border: 2px solid black;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
     flex-direction:  column;
     margin: auto;
     border-radius: 20px;
 }
-
+.project-wrapper {
+    border: 2px solid black;
+    border-radius: 20px;
+}
 #project-row {
     padding: 0 30%;
 }
 .project-photo {
-    max-height: 200px;
+    max-width: 100%;
     overflow: hidden;
     background-position: center;
     border-radius: 20px;
@@ -242,4 +241,80 @@ nav li:first-child{
 
 #github-link a {
     text-decoration: none;
+}
+
+.skill-button {
+    width: auto;
+    padding: 4px 10px;
+    height: auto;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    background-color: #593F62;
+}
+
+#Python {
+    background-color: #4584B6;
+}
+
+#Scikit-learn {
+    background-color: #4584B6;
+}
+
+#Pygame {
+    background-color: #4584B6;
+}
+
+#HTML {
+    background-color: #E34C26;
+}
+
+#CSS {
+    background-color: #264DE4;
+}
+
+#JavaScript {
+    background-color: #F7DF1E;
+}
+
+.job-container {
+    width: 80%;
+    border-left: 3px solid #593F62;
+}
+
+.job-wrapper {
+    width: 100%;
+    padding: 0 5%;
+}
+
+#job-title-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+#job-length-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#job-company-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#job-description-text {
+    font-size: 1.2rem;
+
+}
+
+.contact-container {
+    flex-direction: column;
+}
+#contact-heading-1 {
+    width: 100%; 
 }

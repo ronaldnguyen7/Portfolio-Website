@@ -35,7 +35,7 @@
 /* MD Screens */
 @media (min-width: 769px) {
     :root {
-        --nav-text: 1.3rem;
+        --nav-text: 1.25rem;
         --intro-text: 2.25rem;
         --face-size: 275px;
     }
