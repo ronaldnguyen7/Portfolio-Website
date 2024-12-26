@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+body {
+    min-height: 100vh;
+    background-color: #A5C4D4;
+    /*background: url('images/test.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: transparent;
+    padding: 0 8%;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 30px;
+    font-size: var(--nav-text);
+    text-align: center;
+}
+
+nav ul{
+    padding-left: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: auto;
+    margin: 0px 20px;
+}
+nav a{
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+/*nav a:hover{
+    border-bottom:3px solid black;
+}*/
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.sidebar li{
+    width: 100%;
+    height: 80px;
+    margin-left: 0;
+}
+
+.sidebar a{
+    width: 100%;
+    padding: 10%;
+}
+
+.sidebar a:hover {
+    background-color: white;
+    border-bottom: none;
+}
+
+.menu-button{
+    display: none;
+}
+
+#intro-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25vh;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#name {
+    color: #8499B1;
+    font-weight: 1200;
+}
+#intro-text {
+    font-weight: 900;
+    max-width: 700px;
+    font-size: var(--intro-text);
+}
+
+.image-container {
+    height: auto;
+    width: auto;
+    max-width: var(--face-size);
+    max-height: var(--face-size);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto; 
+}
+
+#about-me-text {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-me-container {
+    text-align: center;
+    flex-direction: column;
+}
+
+#education-container {
+    min-height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#education-container ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#gpa-text {
+    font-size: 1.5rem;
+}
+
+#activities-container {
+    min-height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#activities-container ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.information-container {
+    width: 100%;
+    padding: 0 8%;
+}
+
+#information-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0px)
+    }
+}
+
+.slideInTop {
+    animation: slideInTop 1s ease-in 1s 1 normal none;
+}
+.project-container {
+    border: 2px solid black;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction:  column;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#project-row {
+    padding: 0 30%;
+}
+.project-photo {
+    max-height: 200px;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 20px;
+    
+}
+
+#project-row {
+    padding: 0 10%;
+}
+
+#project-title-text {
+    margin: 0.5rem 0;
+    font-size: 1.75rem;
+}
+
+#project-description-text {
+    font-size: 1;
+    font-weight: 400;
+    color:rgba(0, 0, 0, .6)
+}
+
+#github-link {
+    max-width: 100px;
+    border-radius: 5px;
+
+}
+
+#github-link a {
+    text-decoration: none;
+}

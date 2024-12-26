@@ -1,0 +1,51 @@
+/* NAV BAR DONT TOUCH */
+@media (max-width: 576px){
+    .sidebar{
+      width: 100%;
+    }
+}
+/* NAV BAR DONT TOUCH */
+@media (max-width: 768px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+}
+
+/* Media Queries */
+
+/* XS Screens */
+:root {
+    --nav-text: 1.2rem;
+    --intro-text: 1.75rem;
+    --face-size: 225px;
+}
+
+/* SM Screens */
+@media (min-width: 577px) {
+    :root {
+        --nav-text: 1.2rem;
+        --intro-text: 2rem;
+        --face-size: 250px;
+    }
+}
+
+/* MD Screens */
+@media (min-width: 769px) {
+    :root {
+        --nav-text: 1.3rem;
+        --intro-text: 2.25rem;
+        --face-size: 275px;
+    }
+}
+
+/* LG+ Screens */
+@media (min-width: 993px) {
+    :root {
+        --nav-text: 1.4rem;
+        --intro-text: 2.5rem;
+        --face-size: 300px;
+    }
+}
