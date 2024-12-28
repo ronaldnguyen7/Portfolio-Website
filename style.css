@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 body {
@@ -283,13 +283,12 @@ nav li:first-child{
 }
 
 .job-container {
-    width: 80%;
+    width: var(--work-history-width);
     border-left: 3px solid #593F62;
 }
 
 .job-wrapper {
     width: 100%;
-    padding: 0 5%;
 }
 
 #job-title-text {
@@ -300,6 +299,7 @@ nav li:first-child{
 #job-length-text {
     font-size: 1.5rem;
     font-weight: 700;
+    text-align: var(--job-length-alignment);
 }
 
 #job-company-text {
@@ -314,7 +314,101 @@ nav li:first-child{
 
 .contact-container {
     flex-direction: column;
+    border: 2px solid black;
+    height: auto;
+    margin: 20px;
+    background-color:#2a1d4c;
+    color: white;
+    border-radius: 20px;
 }
 #contact-heading-1 {
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+#get-in-touch {
+    text-transform: uppercase;
+    color: rgb(170 166 195);
+    text-align: left;
+    padding: 0;
+}
+
+#phone-number {
+    font-weight: 600;
+    color: #915eff;
+    text-align: var(--phone-number-alignment);
+    padding: 0;
+}
+
+.contact-icon {
+    font-weight: 500;
+    color: #915eff;
+}
+
+#contact-text {
+    text-align: left;
+    width: 100%;
+    font-weight: 1500;
+    font-size: var(--contact-me-title);
+    margin-bottom: 1.2rem;
+}
+
+#name-email-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: 750;
+}
+
+.message-container {
     width: 100%; 
+}
+
+#message-input {
+    width: 100%;
+    resize: none;
+    text-align: left;
+    vertical-align: top;
+    overflow: hidden;
+}
+ 
+.name-email-container {
+    width: 100%;
+    padding: 0;
+}
+
+.contact-input {
+    width: 100%;
+    border-radius: 10px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+    border: 3px solid transparent;
+    outline: none;
+    color: white;
+    transition: 0.3s ease-out 0s;
+}
+.contact-input:focus {
+    border: 3px solid #915eff;
+}
+
+#name-container {
+    padding: 0;
+    padding-right: 5px;
+}
+
+#email-container {
+    padding: 0;
+}
+
+#send-message-btn {
+    border-radius: 15px;
+    margin-top: 25px;
+    background-color: #915eff;
+    color:white;
+    border: none;
+    transition: 0.3s ease-out 0s;
+}
+
+#send-message-btn:active {
+    transform: scale(0.9);
 }

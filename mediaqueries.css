@@ -21,6 +21,12 @@
     --nav-text: 1.2rem;
     --intro-text: 1.75rem;
     --face-size: 225px;
+
+    --work-history-width: 96%;
+    --job-length-alignment: left;
+
+    --phone-number-alignment: left;
+    --contact-me-title: 3rem;
 }
 
 /* SM Screens */
@@ -29,6 +35,12 @@
         --nav-text: 1.2rem;
         --intro-text: 2rem;
         --face-size: 250px;
+
+        --work-history-width: 91%;
+        --job-length-alignment: left;
+
+        --phone-number-alignment: left;
+        --contact-me-title: 3rem;
     }
 }
 
@@ -38,6 +50,12 @@
         --nav-text: 1.25rem;
         --intro-text: 2.25rem;
         --face-size: 275px;
+
+        --work-history-width: 86%;
+        --job-length-alignment: left;
+
+        --phone-number-alignment: left;
+        --contact-me-title: 3.25rem;
     }
 }
 
@@ -47,5 +65,11 @@
         --nav-text: 1.4rem;
         --intro-text: 2.5rem;
         --face-size: 300px;
+
+        --work-history-width: 80%;
+        --job-length-alignment: right;
+
+        --phone-number-alignment: right;
+        --contact-me-title: 3.5rem;
     }
 }

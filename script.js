@@ -79,11 +79,11 @@ const jobRow = document.getElementById("experience-row")
 
 const jobBox = ( job ) => {
     return `<div class="job-container d-flex align-items-center">
-        <div class="job-wrapper">
+        <div class="job-wrapper p-3">
             <div class=" row job-title-container d-flex align-items-center justify-content-between">
-                <p id="job-title-text" class="col-12 col-xl-4">${job.title}</p>
+                <p id="job-title-text" class="col-12 col-lg-6">${job.title}</p>
 
-                <p id="job-length-text" class="col-12 col-xl-4">${job.beginning} - ${job.ending}</p>
+                <p id="job-length-text" class="col-12 col-lg-6">${job.beginning} - ${job.ending}</p>
             </div>
 
             <p id="job-company-text">${job.company}</p>
