@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1782 855" preserveAspectRatio="xMidYMid" width="1782" height="855" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:block;background:rgb(255, 255, 255);width:1782px;height:855px;;animation:none"><g><defs><filter height="3" width="3" y="-1" x="-1" id="f-f"><feGaussianBlur stdDeviation="50"></feGaussianBlur></filter>
+
+
+<linearGradient y2="0.2" y1="0" x2="0" x1="0" id="lg1">
+       <stop offset="0" stop-opacity="1" stop-color="#9aa5b1">
+         <animate attributeName="stop-color" values="#9aa5b1;#c7cedb;#eaeff6;#9aa5b1" dur="5s" repeatCount="indefinite" />
+       </stop><stop offset="0" stop-opacity="1" stop-color="#9aa5b1"></stop>
+
+  
+<stop offset="0.8" stop-opacity="1" stop-color="#c7cedb"></stop>
+
+  
+<stop offset="1" stop-opacity="1" stop-color="#c7cedb"></stop></linearGradient>
+
+
+<radialGradient r="2" cy="0.5" cx="0.5" id="lg2"><stop offset="0" stop-opacity="1" stop-color="#ffffff"></stop>
+
+  
+<stop offset="0.6" stop-opacity="1" stop-color="#c7cedb"></stop>
+
+  
+<stop offset="1" stop-opacity="1" stop-color="#c7cedb"></stop></radialGradient></defs>
+
+
+<g filter="url(#f-f)"><rect fill="url(#lg2)" height="944.1" width="1871.1" y="-89.10000000000001" x="-89.10000000000001" style="fill:url('#lg2');;animation:none"></rect>
+
+
+<path fill="url(#lg1)" d="M-89.0999984741211 427.5C222.75 427.5 222.75 384.75 445.5 384.75C668.25 384.75 1113.75 470.25 1336.5 470.25C1559.25 470.25 1559.25 427.5 1871.0999755859375 427.5L1871.0999755859375 944.0999755859375L-89.0999984741211 944.0999755859375Z" style="fill:url('#lg1');;animation:none"></path></g>
+<g></g></g></svg>

@@ -4,7 +4,7 @@
       width: 100%;
     }
 }
-/* NAV BAR DONT TOUCH */
+/* NAV BAR DONT TOUCH*/
 @media (max-width: 768px){
     .hideOnMobile{
       display: none;
@@ -27,6 +27,20 @@
 
     --phone-number-alignment: left;
     --contact-me-title: 3rem;
+
+    --text-highlight-color: #80F5EE;
+    --text-normal-color: #EDEDEB;
+    --button-color-1: #D87C67;
+    --button-color-2: #BFD7EA;
+    --header-color: #F0E6D6;
+    --border-color: #5B6B7A;
+    --background-color: #4A5260;
+
+    --container-color-background-1: #1D2A4C;
+    --container-color-background-2: #150578;
+    --container-color-highlight: #4D9BE6;
+
+    --hover-name: 3rem;
 }
 
 /* SM Screens */

@@ -8,6 +8,28 @@ function hideSidebar(){
     sidebar.style.display = 'none'
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const interBubble = document.querySelector('.interactive');
+    let curX = 0;
+    let curY = 0;
+    let tgX = 0;
+    let tgY = 0;
+
+    function move() {
+        curX += (tgX - curX) / 20;
+        curY += (tgY - curY) / 20;
+        interBubble.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
+        requestAnimationFrame(move);
+    }
+
+    window.addEventListener('mousemove', (event) => {
+        tgX = event.clientX;
+        tgY = event.clientY;
+    });
+
+    move();
+});
+
 const projects = [
     {
         id: 0,
@@ -46,17 +68,21 @@ const skillButton = (skill) => {
 
 const projectBox = ( {id, name, skills, description, link, photo} ) => {
     return `<div id="${id}" class="col-12 col-md-6 col-lg-4 p-2 project-container">
-        <div class="project-wrapper p-2"> 
-            <img class="project-photo" src="${photo}">
-
-            <h3 id="project-title-text">${name}</h3>
-        <h4 id="project-description-text">${description}</h4>
-        
-        
-        ${ skills.map( skill => skillButton(skill)).join('')  }
+        <div class="project-wrapper p-3"> 
+        <img class="project-photo" src="${photo}">
+            <div class="project-information mt-3">
+                <h3 id="project-title-text">${name} | <button id="github-link"><a href="${link}">GitHub</a></button></h3>
+                <h4 id="project-description-text">${description}</h4>
         
 
-        <button id="github-link"><a href="${link}">GitHub</a></button>
+                <div class="d-flex flex-column align-items-start">
+                    <div>
+                    ${ skills.map( skill => skillButton(skill)).join('')  }
+                    </div>
+
+                    
+                </div>
+            </div>
         </div>
     </div>`
 }

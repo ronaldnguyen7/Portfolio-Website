@@ -2,23 +2,24 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 body {
     min-height: 100vh;
-    background-color: #A5C4D4;
-    /*background: url('images/test.jpg');
+    /* background-image: url('images/background.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
+    background-attachment: fixed; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 nav{
     background-color: transparent;
-    padding: 0 8%;
+    padding: 30px 8%;
     text-transform: uppercase;
     font-weight: 900;
-    margin-top: 30px;
     font-size: var(--nav-text);
     text-align: center;
 }
@@ -40,11 +41,14 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: var(--text-normal-color);
+    border-bottom: 2px solid transparent;
+    transition: 0.5s ease-out;
+    cursor: pointer;
 }
-/*nav a:hover{
-    border-bottom:3px solid black;
-}*/
+nav a:hover, nav a:focus{
+    border-bottom: 2px solid var(--text-normal-color);
+}
 
 nav li:first-child{
     margin-right: auto;
@@ -87,13 +91,13 @@ nav li:first-child{
 }
 
 #intro-container {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 25px;
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
 }
 
 #intro {
@@ -105,13 +109,20 @@ nav li:first-child{
 }
 
 #name {
-    color: #8499B1;
+    color: var(--text-highlight-color);
     font-weight: 1200;
+    transition: font-size 0.5s ease-in-out;
 }
+
+#name:hover, #name:focus {
+    font-size: var(--hover-name);
+}
+
 #intro-text {
     font-weight: 900;
     max-width: 700px;
     font-size: var(--intro-text);
+    color: var(--text-normal-color);
 }
 
 .image-container {
@@ -142,11 +153,12 @@ nav li:first-child{
 #about-me-container {
     text-align: center;
     flex-direction: column;
+    color: var(--text-normal-color);
 }
 
 #education-container {
     min-height: 200px;
-    border: 2px solid black;
+    background-color: var(--container-color-background-1);
     border-radius: 20px;
     padding: 20px;
 }
@@ -163,10 +175,11 @@ nav li:first-child{
 
 #activities-container {
     min-height: 200px;
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
+    background-color: var(--container-color-background-1);;
 }
 
 #activities-container ul {
@@ -204,22 +217,35 @@ nav li:first-child{
     border-radius: 20px;
 }
 .project-wrapper {
-    border: 2px solid black;
+    border: none;
     border-radius: 20px;
+    background-color: var(--container-color-background-1);
+    color: var(--text-normal-color);
 }
+
+#project-heading {
+    color: var(--text-normal-color);
+}
+
 #project-row {
     padding: 0 30%;
+}
+
+.project-information {
+    --tw-bg-opacity: 1;
+    background-color: rgb(16 21 48 / var(--tw-bg-opacity));
+    border-radius: 20px;
+    padding: 10px;
 }
 .project-photo {
     max-width: 100%;
     overflow: hidden;
     background-position: center;
     border-radius: 20px;
-    
 }
 
 #project-row {
-    padding: 0 10%;
+    padding: 0;
 }
 
 #project-title-text {
@@ -230,17 +256,17 @@ nav li:first-child{
 #project-description-text {
     font-size: 1;
     font-weight: 400;
-    color:rgba(0, 0, 0, .6)
 }
 
 #github-link {
-    max-width: 100px;
-    border-radius: 5px;
-
+    border: none;
+    background-color: transparent;
+    font-size: 1.75rem;
 }
-
 #github-link a {
     text-decoration: none;
+    color: var(--container-color-highlight);
+    
 }
 
 .skill-button {
@@ -248,14 +274,14 @@ nav li:first-child{
     padding: 4px 10px;
     height: auto;
     text-decoration: none;
-    color: white;
+    color: var(--background-color);
+    font-weight: 600;
     border: none;
     border-radius: 15px;
-    font-weight: 500;
     font-size: 1rem;
     margin-right: 5px;
     margin-bottom: 3px;
-    background-color: #593F62;
+    background-color: var(--container-color-highlight);
 }
 
 #Python {
@@ -282,9 +308,13 @@ nav li:first-child{
     background-color: #F7DF1E;
 }
 
+#experience-heading {
+    color: var(--text-normal-color);
+}
 .job-container {
     width: var(--work-history-width);
-    border-left: 3px solid #593F62;
+    border-left: 3px solid var(--container-color-highlight);
+    color: var(--text-normal-color);
 }
 
 .job-wrapper {
@@ -314,10 +344,9 @@ nav li:first-child{
 
 .contact-container {
     flex-direction: column;
-    border: 2px solid black;
     height: auto;
     margin: 20px;
-    background-color:#2a1d4c;
+    background-color:var(--container-color-background-1);
     color: white;
     border-radius: 20px;
 }
@@ -335,14 +364,13 @@ nav li:first-child{
 
 #phone-number {
     font-weight: 600;
-    color: #915eff;
+    color: var(--container-color-highlight);
     text-align: var(--phone-number-alignment);
     padding: 0;
 }
 
 .contact-icon {
     font-weight: 500;
-    color: #915eff;
 }
 
 #contact-text {
@@ -381,14 +409,14 @@ nav li:first-child{
     width: 100%;
     border-radius: 10px;
     --tw-bg-opacity: 1;
-    background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+    background-color: rgb(16 21 48 / var(--tw-bg-opacity));
     border: 3px solid transparent;
     outline: none;
     color: white;
     transition: 0.3s ease-out 0s;
 }
 .contact-input:focus {
-    border: 3px solid #915eff;
+    border: 3px solid var(--container-color-highlight);
 }
 
 #name-container {
@@ -403,7 +431,7 @@ nav li:first-child{
 #send-message-btn {
     border-radius: 15px;
     margin-top: 25px;
-    background-color: #915eff;
+    background-color: var(--container-color-highlight);
     color:white;
     border: none;
     transition: 0.3s ease-out 0s;
@@ -411,4 +439,191 @@ nav li:first-child{
 
 #send-message-btn:active {
     transform: scale(0.9);
+}
+
+/* BACKGROUND STUFF */
+.text-container {
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 96px;
+    color: white;
+    opacity: 0.8;
+    user-select: none;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+  
+:root {
+    --color-bg1: #2F3944;
+    --color-bg2: #2F3944;
+    --color1: 54, 69, 79;
+    --color2: 83, 104, 120;
+    --color3: 44, 53, 57;
+    --color4: 74, 81, 99;
+    --color5: 55, 71, 79;
+    --color-interactive: 119, 136, 153;
+    --circle-size: 80%;
+    --blending: hard-light;
+}
+  
+@keyframes moveInCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes moveVertical {
+    0% {
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+}
+  
+@keyframes moveHorizontal {
+    0% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+    50% {
+      transform: translateX(50%) translateY(10%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+}
+  
+.gradient-bg {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+}
+    
+.gradient-bg svg {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+}
+  
+  
+.gradients-container {
+    filter: url(#goo) blur(40px) ;
+    width: 100%;
+    height: 100%;
+}
+  
+.g1 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+  
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+  
+    transform-origin: center center;
+    animation: moveVertical 30s ease infinite;
+  
+    opacity: 1;
+}
+  
+.g2 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+  
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+  
+    transform-origin: calc(50% - 400px);
+    animation: moveInCircle 20s reverse infinite;
+  
+    opacity: 1;
+}
+  
+.g3 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+  
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 + 200px);
+    left: calc(50% - var(--circle-size) / 2 - 500px);
+  
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+  
+    opacity: 1;
+}
+  
+.g4 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+  
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+  
+    transform-origin: calc(50% - 200px);
+    animation: moveHorizontal 40s ease infinite;
+  
+    opacity: 0.7;
+}
+  
+.g5 {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+  
+    width: calc(var(--circle-size) * 2);
+    height: calc(var(--circle-size) * 2);
+    top: calc(50% - var(--circle-size));
+    left: calc(50% - var(--circle-size));
+  
+    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    animation: moveInCircle 20s ease infinite;
+  
+    opacity: 1;
+}
+  
+.interactive {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+  
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+  
+    opacity: 0.7;
 }
