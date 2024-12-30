@@ -30,6 +30,54 @@ document.addEventListener('DOMContentLoaded', () => {
     move();
 });
 
+// Contact Form email
+const validateMessage = (name, email, message) => {
+    if (name == "" || email == "" || message == "") {
+        return false
+    }
+    return true
+}
+const sendBtn = document.getElementById('send-message-btn')
+
+sendBtn.addEventListener('click', async () => {
+    const nameInput = document.getElementById("name-input")
+    const emailInput = document.getElementById("email-input")
+    const messageInput = document.getElementById("message-input")
+    
+    validateMessage(nameInput.value, emailInput.value, messageInput.value)
+
+    const message = `${nameInput.value}\n${emailInput.value}\n${messageInput.value}`
+
+    try {
+      const response = await fetch('https://portfolio-website-inkm.onrender.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'ronaldnguyen555@gmail.com',
+          subject: 'Portfolio Website Message',
+          text: message,
+        }),
+      });
+
+      const result = await response.text();
+      if (response.ok) {
+        alert('Email sent successfully!');
+      } else {
+        alert('Failed to send email: ' + result);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred while sending the email.');
+    }
+
+    nameInput.value = ""
+    emailInput.value == ""
+    messageInput.value == ""
+  });
+
+
 const projects = [
     {
         id: 0,
@@ -74,14 +122,8 @@ const projectBox = ( {id, name, skills, description, link, photo} ) => {
                 <h3 id="project-title-text">${name} | <button id="github-link"><a href="${link}">GitHub</a></button></h3>
                 <h4 id="project-description-text">${description}</h4>
         
-
-                <div class="d-flex flex-column align-items-start">
-                    <div>
                     ${ skills.map( skill => skillButton(skill)).join('')  }
-                    </div>
 
-                    
-                </div>
             </div>
         </div>
     </div>`

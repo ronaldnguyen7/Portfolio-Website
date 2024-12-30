@@ -37,7 +37,7 @@
     --background-color: #4A5260;
 
     --container-color-background-1: #1D2A4C;
-    --container-color-background-2: #150578;
+    --container-color-background-2: rgb(16 21 48 / var(--tw-bg-opacity));
     --container-color-highlight: #4D9BE6;
 
     --hover-name: 3rem;
