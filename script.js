@@ -49,7 +49,7 @@ sendBtn.addEventListener('click', async () => {
     const message = `${nameInput.value}\n${emailInput.value}\n${messageInput.value}`
 
     try {
-      const response = await fetch('https://portfolio-website-inkm.onrender.com', {
+      const response = await fetch('https://portfolio-website-inkm.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
