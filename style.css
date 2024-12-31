@@ -667,3 +667,9 @@ nav li:first-child{
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+
+.animateBottomText {
+    animation: appearOnScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
