@@ -21,9 +21,13 @@
     --nav-text: 1.2rem;
     --intro-text: 1.75rem;
     --face-size: 225px;
+    --highlight-text: 2.75rem;
+    --heading-size: 2rem;
 
     --work-history-width: 96%;
     --job-length-alignment: left;
+
+    --project-row-padding: 1rem;
 
     --phone-number-alignment: left;
     --contact-me-title: 3rem;
@@ -49,9 +53,13 @@
         --nav-text: 1.2rem;
         --intro-text: 2rem;
         --face-size: 250px;
+        --highlight-text: 3rem;
+        --heading-size: 2.25rem;
 
         --work-history-width: 91%;
         --job-length-alignment: left;
+
+        --project-row-padding: 2rem;
 
         --phone-number-alignment: left;
         --contact-me-title: 3rem;
@@ -64,9 +72,13 @@
         --nav-text: 1.25rem;
         --intro-text: 2.25rem;
         --face-size: 275px;
+        --highlight-text: 3.25rem;
+        --heading-size: 2.5rem;
 
         --work-history-width: 86%;
         --job-length-alignment: left;
+
+        --project-row-padding: 3rem;
 
         --phone-number-alignment: left;
         --contact-me-title: 3.25rem;
@@ -79,9 +91,13 @@
         --nav-text: 1.4rem;
         --intro-text: 2.5rem;
         --face-size: 300px;
-
+        --highlight-text: 3.5rem;
+        --heading-size: 2.75rem;
+        
         --work-history-width: 80%;
         --job-length-alignment: right;
+
+        --project-row-padding: 4rem ;
 
         --phone-number-alignment: right;
         --contact-me-title: 3.5rem;

@@ -12,16 +12,19 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; */
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav{
     background-color: transparent;
     padding: 30px 8%;
+    width: 100vw;
     text-transform: uppercase;
     font-weight: 900;
     font-size: var(--nav-text);
     text-align: center;
+    
 }
 
 nav ul{
@@ -111,11 +114,7 @@ nav li:first-child{
 #name {
     color: var(--text-highlight-color);
     font-weight: 1200;
-    transition: font-size 0.5s ease-in-out;
-}
-
-#name:hover, #name:focus {
-    font-size: var(--hover-name);
+    font-size: var(--highlight-text);
 }
 
 #intro-text {
@@ -123,6 +122,10 @@ nav li:first-child{
     max-width: 700px;
     font-size: var(--intro-text);
     color: var(--text-normal-color);
+}
+
+.heading-margin {
+    margin-top: 60px;
 }
 
 .image-container {
@@ -144,10 +147,11 @@ nav li:first-child{
     height: auto; 
 }
 
-#about-me-text {
+.about-me-text {
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: var(--heading-size);
     margin-bottom: 20px;
+    color: var(--text-normal-color)
 }
 
 #about-me-container {
@@ -161,6 +165,7 @@ nav li:first-child{
     background-color: var(--container-color-background-1);
     border-radius: 20px;
     padding: 20px;
+    margin-top: 20px;
 }
 
 #education-container ul {
@@ -179,7 +184,7 @@ nav li:first-child{
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
-    background-color: var(--container-color-background-1);;
+    background-color: var(--container-color-background-1);
 }
 
 #activities-container ul {
@@ -211,6 +216,7 @@ nav li:first-child{
 .slideInTop {
     animation: slideInTop 1s ease-in 1s 1 normal none;
 }
+
 .project-container {
     flex-direction:  column;
     margin: auto;
@@ -228,7 +234,7 @@ nav li:first-child{
 }
 
 #project-row {
-    padding: 0 30%;
+    padding: 0 var(--project-row-padding);
 }
 
 .project-information {
@@ -243,7 +249,9 @@ nav li:first-child{
     background-position: center;
     border-radius: 20px;
 }
-
+#project-main {
+    padding: 0 var(--project-row-padding);
+}
 #project-row {
     padding: 0;
 }
@@ -274,7 +282,7 @@ nav li:first-child{
     padding: 4px 10px;
     height: auto;
     text-decoration: none;
-    color: var(--background-color);
+    color: var(--text-normal-color);
     font-weight: 600;
     border: none;
     border-radius: 15px;
@@ -282,6 +290,7 @@ nav li:first-child{
     margin-right: 5px;
     margin-bottom: 3px;
     background-color: var(--container-color-highlight);
+    cursor: default;
 }
 
 #Python {
@@ -626,4 +635,35 @@ nav li:first-child{
     left: -50%;
   
     opacity: 0.7;
+}
+
+#back-to-top {
+    text-decoration: none;
+    color: var(--text-normal-color);
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+#copyright-text {
+    margin: 50px 0;
+    color: var(--text-normal-color);
+    font-size: 1.5rem;
+}
+
+/* Animate on Scroll */
+@keyframes appearOnScroll {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.animate {
+    animation: appearOnScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
