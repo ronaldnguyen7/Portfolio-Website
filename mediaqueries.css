@@ -31,6 +31,7 @@
 
     --phone-number-alignment: left;
     --contact-me-title: 3rem;
+    --copyright-text: 1rem;
 
     --text-highlight-color: #80F5EE;
     --text-normal-color: #EDEDEB;
@@ -63,6 +64,8 @@
 
         --phone-number-alignment: left;
         --contact-me-title: 3rem;
+        --copyright-text: 1.17rem;
+        
     }
 }
 
@@ -82,6 +85,7 @@
 
         --phone-number-alignment: left;
         --contact-me-title: 3.25rem;
+        --copyright-text: 1.33rem;
     }
 }
 
@@ -101,5 +105,6 @@
 
         --phone-number-alignment: right;
         --contact-me-title: 3.5rem;
+        --copyright-text: 1.5rem;
     }
 }

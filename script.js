@@ -134,7 +134,7 @@ const projectBox = ( {id, name, skills, description, link, photo} ) => {
         <div class="project-wrapper p-3 animate"> 
         <img class="project-photo" src="${photo}">
             <div class="project-information mt-3">
-                <h3 id="project-title-text">${name} | <button id="github-link"><a href="${link}">GitHub</a></button></h3>
+                <h3 id="project-title-text">${name} | <button id="github-link"><a href="${link}" target="_blank">GitHub</a></button></h3>
                 <h4 id="project-description-text">${description}</h4>
         
                     ${ skills.map( skill => skillButton(skill)).join('')  }

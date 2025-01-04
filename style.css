@@ -75,18 +75,21 @@ nav li:first-child{
 }
 .sidebar li{
     width: 100%;
-    height: 80px;
+    height: 100px;
     margin-left: 0;
 }
 
 .sidebar a{
     width: 100%;
     padding: 10%;
+    fill: var(--text-normal-color);
 }
 
 .sidebar a:hover {
     background-color: white;
     border-bottom: none;
+    color: var(--background-color);
+    fill: var(--background-color);
 }
 
 .menu-button{
@@ -640,8 +643,12 @@ nav li:first-child{
 #back-to-top {
     text-decoration: none;
     color: var(--text-normal-color);
-    font-size: 2.5rem;
+    font-size: var(--heading-size);
     margin-top: 30px;
+}
+
+.resume-link {
+    margin-left: 1rem;
 }
 
 #copyright-text {
