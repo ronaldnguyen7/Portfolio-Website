@@ -3,8 +3,6 @@
 
 Welcome to the repository for my **Portfolio Website**! This project showcases my professional skills, personal projects, and accomplishments in a clean, responsive, and visually appealing format.
 
-![Portfolio Preview](path/to/screenshot.png) <!-- Replace with an actual screenshot URL -->
-
 ---
 
 ## 🚀 Live Demo
@@ -60,10 +58,11 @@ git clone https://github.com/ronaldnguyen7/Portfolio-Website.git
 
 ## 📷 Screenshots
 ### Desktop View
-![Desktop View](path/to/screenshot.png) <!-- Add a screenshot of the desktop version -->
+<img width="1510" alt="Screenshot 2025-01-05 at 2 50 37 AM" src="https://github.com/user-attachments/assets/f3878513-88d4-411e-96e4-4af5263b2dc0" />
 
 ### Mobile View
-![Mobile View](path/to/screenshot.png) <!-- Add a screenshot of the mobile version -->
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/65ca6e89-bfed-47d0-8a3e-5a39a6289b8f" />
+
 
 ---
 
