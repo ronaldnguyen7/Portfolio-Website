@@ -154,7 +154,7 @@ const jobs = [
         description : "Redesign and redevelop organization's website using",
         skills : ["JavaScript"],
         beginning : "May 2024",
-        ending : "August 2024"
+        ending : "Present"
     }
 ]
 
